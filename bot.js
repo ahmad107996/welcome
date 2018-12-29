@@ -7,19 +7,19 @@ client.on("guildMemberAdd", member => {
   if(member.guild.id === "274665615833432064") {  
 const channel = member.guild.channels.find('id', '450468402650284033'); 
 if (!channel) return;
-channel.send(`**<@${member.user.id}> Welcome To Server Family Royal King...!`)
+channel.send(`<@${member.user.id}> *Welcome To Server Family Royal King...!*`)
 }}); 
 client2.on("guildMemberAdd", member => {
   if(member.guild.id === "274665615833432064") {  
 const channel = member.guild.channels.find('id', '450468402650284033'); 
 if (!channel) return;
-channel.send(`**<@${member.user.id}> Welcome To Server Family Royal King...!`)
+channel.send(`<@${member.user.id}> *Welcome To Server Family Royal King...!*`)
 }}); 
 client3.on("guildMemberAdd", member => {
   if(member.guild.id === "274665615833432064") {  
 const channel = member.guild.channels.find('id', '450468402650284033'); 
 if (!channel) return;
-channel.send(`**<@${member.user.id}> Welcome To Server Family Royal King...!`)
+channel.send(`<@${member.user.id}> *Welcome To Server Family Royal King...!*`)
 }}); 
 
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
