@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
 const client3 = new Discord.Client();
+  const client4 = new Discord.Client();
 
 client.on("guildMemberAdd", member => {
   if(member.guild.id === "274665615833432064") {  
