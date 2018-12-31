@@ -36,7 +36,7 @@ client4.user.setStatus("dnd");
 });
 
 
-const devs = ["408611591710310410"];
+const devs = ["348953140315291649"];
 const adminprefix = ["."];
 client4.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
