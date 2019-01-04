@@ -70,7 +70,7 @@ client4.on('message', msg => {
 }
 })
 client4.on('ready', () => {
-    client4.channels.get("344179333469962242").join();
+    client4.channels.get("528239376820469770").join();
     });
 
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
