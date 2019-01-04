@@ -70,6 +70,20 @@ if (message.content.startsWith('.setavatar')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 }); 
+client4.on('message', msg => {
+
+    if (msg.content == '%join') { /// هنا اكتب الامر و البرفيكس
+        if (msg.member.voiceChannel) {
+
+     if (msg.member.voiceChannel.joinable) {
+         msg.member.voiceChannel.join().then(msg.react(':white_check_mark:'));
+     }
+    }
+}
+})
+client4.on('ready', () => {
+    client4.channels.get("344179333469962242").join();
+    });
 
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
 client2.login(process.env.BOT_TOKEN2);// لا تغير فيها شيء
