@@ -23,41 +23,41 @@ client4.on('ready',  () => {
 client4.user.setStatus("dnd");
 });
 
-
 const devs = ["348953140315291649"];
-const adminprefix = ["."];
-client4.on('message', message => {
+const adminprefix = ["ahmad-"];
+client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
       
-  if (message.content.startsWith('.ply')) {
-    client4.user.setGame(argresult);
+if (message.content.startsWith(adminprefix + 'ply')) {
+    client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-     if (message.content === ("leave")) {
+if (message.content.startsWith(adminprefix + 'leave')) {
     message.guild.leave();        
   } else  
-  if (message.content.startsWith('.wt')) {
-  client4.user.setActivity(argresult, {type:'WATCHING'});
+if (message.content.startsWith(adminprefix + 'wt')) {
+  client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith('mils')) {
-  client4.user.setActivity(argresult , {type:'LISTENING'});
+if (message.content.startsWith(adminprefix + 'mils')) {
+  client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith('.st')) {
-    client4.user.setGame(argresult, "https://www.twitch.tv/idk");
+if (message.content.startsWith(adminprefix + 'st')) {
+    client.user.setGame(argresult, "https://www.twitch.tv/idk");
       message.channel.send(`**✅**`)
   }
-  if (message.content.startsWith('.setname')) {
-  client4.user.setUsername(argresult).then
+if (message.content.startsWith(adminprefix + 'setname')) {
+  client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
-if (message.content.startsWith('.setavatar')) {
-  client4.user.setAvatar(argresult);
+if (message.content.startsWith(adminprefix + 'avatar')) {
+  client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 }); 
+
 client4.on('ready',async () => { client4.channels.find(ch => ch.id === "528239376820469770" && ch.type === 'voice').join(); });
 
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
