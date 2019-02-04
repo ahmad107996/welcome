@@ -20,7 +20,6 @@ client4.on('ready',  () => {
   console.log(`Logged in as  * [ " ${client4.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
   console.log('is online')
-client4.user.setStatus("dnd");
 });
 
 const devs = ["348953140315291649"];
