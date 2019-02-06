@@ -11,7 +11,6 @@ channel.send(`<@${member.user.id}> **Welcome to Royal Family :RF~4: **`)
 }}); 
  
 
-const client4 = new Discord.Client();
 
 
 client4.on('ready',  () => {
