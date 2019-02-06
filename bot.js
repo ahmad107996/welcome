@@ -3,10 +3,10 @@ const client = new Discord.Client();
 
 
 client.on("guildMemberAdd", member => {
-  if(member.guild.id === "274665615833432064") {  
-const channel = member.guild.channels.find('id', '450468402650284033'); 
+  if(member.guild.id === "348953140315291649") {  
+const channel = member.guild.channels.find('id', '541691032060821504'); 
 if (!channel) return;
-channel.send(`<@${member.user.id}> *Welcome To Server Family Royal King...!*`)
+channel.send(`<@${member.user.id}> **Welcome to Royal Family :RF~4: **`)
 }}); 
  
 
