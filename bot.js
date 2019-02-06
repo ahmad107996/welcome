@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
-client.on("guildMemberAdd", member => {
+client4.on("guildMemberAdd", member => {
   if(member.guild.id === "348953140315291649") {  
 const channel = member.guild.channels.find('id', '541691032060821504'); 
 if (!channel) return;
