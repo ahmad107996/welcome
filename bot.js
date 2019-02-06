@@ -57,7 +57,6 @@ if (message.content.startsWith(adminprefix + 'avatar')) {
 }
 }); 
 
-client4.on('ready',async () => { client4.channels.find(ch => ch.id === "528239376820469770" && ch.type === 'voice').join(); });
 
 client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
 client4.login(process.env.BOT_TOKEN4);// لا تغير فيها 
