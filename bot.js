@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const client4 = new Discord.Client();
 
 
 client4.on("guildMemberAdd", member => {
