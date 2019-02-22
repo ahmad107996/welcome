@@ -6,7 +6,7 @@ client.on('ready' , async =>{
 console.log(`'${client.user.username}' on`)
 });
 
-client.on('ready' , async =>{
+client4.on('ready' , async =>{
 console.log(`'${client4.user.username}' on`)
 });
 client4.on("guildMemberAdd", member => {
