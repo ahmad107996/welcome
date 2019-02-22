@@ -4,9 +4,11 @@ const client4 = new Discord.Client();
 
 client.on('ready' , async =>{
 console.log(`'${client.user.username}' on`)
-console.log(`'${client4.user.username}' on`)
 });
 
+client.on('ready' , async =>{
+console.log(`'${client4.user.username}' on`)
+});
 client4.on("guildMemberAdd", member => {
   if(member.guild.id === "274665615833432064") {  
 const channel = member.guild.channels.find('id', '541691032060821504'); 
