@@ -9,6 +9,9 @@ console.log(`'${client.user.username}' on`)
 client4.on('ready' , async =>{
 console.log(`'${client4.user.username}' on`)
 });
+
+
+
 client4.on("guildMemberAdd", member => {
   if(member.guild.id === "274665615833432064") {  
 const channel = member.guild.channels.find('id', '547126106386333725'); 
@@ -16,12 +19,6 @@ if (!channel) return;
 channel.send(`<@${member.user.id}> **Welcome to Royal Family <:RF:542067695517171733> **`)
 }}); 
 
-client4.on("guildMemberAdd", member => {
-  if(member.guild.id === "547126106386333719") {  
-const channel = member.guild.channels.find('id', '541691032060821504'); 
-if (!channel) return;
-channel.send(`<@${member.user.id}> **🧚:skin-tone-1:‍♀️ Welcome to Sk!p ✶....**`)
-}}); 
 client4.on('message', message => {
   var devs = ["348953140315291649"];
 var adminprefix = ["ahmad-"];
