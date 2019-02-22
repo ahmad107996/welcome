@@ -13,8 +13,6 @@ const channel = member.guild.channels.find('id', '541691032060821504');
 if (!channel) return;
 channel.send(`<@${member.user.id}> **Welcome to Royal Family <:RF:542067695517171733> **`)
 }}); 
- clinet.on('ready' , ayns
-
 client4.on('message', message => {
   var devs = ["348953140315291649"];
 var adminprefix = ["ahmad-"];
