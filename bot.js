@@ -14,10 +14,18 @@ console.log(`'${client4.user.username}' on`)
 
 client4.on("guildMemberAdd", member => {
   if(member.guild.id === "274665615833432064") {  
-const channel = member.guild.channels.find('id', '547126106386333725'); 
+const channel = member.guild.channels.find('id', '541691032060821504'); 
 if (!channel) return;
 channel.send(`<@${member.user.id}> **Welcome to Royal Family <:RF:542067695517171733> **`)
 }}); 
+
+ client4.on('ready', async() => {
+    const server = "274665615833432064"; // ايدي السررفر
+const channel = "541691549860495367";//ايدي الروم
+        setInterval(()=>{
+        client.guilds.get(server).channels.get(channel).send(`$daily`)
+    },86400000);
+    });
 
 client4.on('message', message => {
   var devs = ["348953140315291649"];
@@ -58,7 +66,6 @@ if (message.content.startsWith(adminprefix + 'avatar')) {
 client.on('message', message => {
   var devs = ["462434603895095297"];
 var adminprefix = ["s-"];
-
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
       
