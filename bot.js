@@ -10,6 +10,22 @@ client4.on('ready' , async =>{
 console.log(`'${client4.user.username}' on`)
 });
 
+client4.on("message", message => {
+  if(message.content.startsWith("em")) {
+    
+var color = message.content.split(" ")[1];
+  var text = message.content.split(" ").slice(2);
+    var tt = text.join(" ")
+  if(!color) return message.reply("يجب كتابة لون الامبد الذي تريده");
+    if(!tt) return message.reply("يجب كتابة كلام لتكراره");
+  let embed = new Discord.RichEmbed()
+  .setColor(color)
+  .setDescription(tt)
+  message.channel.send(embed).catch(Julian =>{console.log('`Error`: ' + Julian);
+message.channel.send("`Error`:" + Julian)
+    })
+  }
+  });
 
 
 client4.on("guildMemberAdd", member => {
