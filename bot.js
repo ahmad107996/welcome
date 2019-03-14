@@ -20,8 +20,8 @@ client4.on('message', msg => {
     }
 }
 })
-client.on('ready', () => { 
-client.channels.get("553029170741903360").join();
+client4.on('ready', () => { 
+client4.channels.get("553964185902645249").join();
     });
 
 
