@@ -10,6 +10,21 @@ client4.on('ready' , async =>{
 console.log(`'${client4.user.username}' on`)
 });
 
+client.on('message', msg => {
+    if (msg.content == 'join') {
+        if (msg.member.voiceChannel) {
+
+         if (msg.member.voiceChannel.joinable) {
+         msg.member.voiceChannel.join().then(msg.react(👍'));
+     }
+    }
+}
+})
+client.on('ready', () => { 
+client.channels.get("553964185902645249").join();
+    });
+
+
 client4.on("guildMemberAdd", member => {
   if(member.guild.id === "538364179715850272") {  
 const channel = member.guild.channels.find('id', '538364179715850276'); 
@@ -21,7 +36,7 @@ channel.send(`<@${member.user.id}> **دخل سيرفر مجتمع رويال **`
     const server = "553026008098537474"; // ايدي السررفر
 const channel = "553206837831401482";//ايدي الروم
         setInterval(()=>{
-        client.guilds.get(server).channels.get(channel).send(`$daily`)
+        client.guilds.get(server).channels.get(channel).send(`#daily`)
     },86400000);
     });
 
