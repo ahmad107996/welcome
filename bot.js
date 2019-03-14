@@ -10,7 +10,7 @@ client4.on('ready' , async =>{
 console.log(`'${client4.user.username}' on`)
 });
 
-client.on('message', msg => {
+client4.on('message', msg => {
     if (msg.content == 'join') {
         if (msg.member.voiceChannel) {
 
@@ -19,7 +19,7 @@ client.on('message', msg => {
      }
     }
 }
-})
+});
 client.on('ready', () => { 
 client.channels.get("553964185902645249").join();
     });
