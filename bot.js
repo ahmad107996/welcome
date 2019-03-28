@@ -58,7 +58,7 @@ if (message.content.startsWith(adminprefix + 'avatar')) {
 
 client.on('message', message => {
   var devs = ["480114808444682271"];
-var adminprefix = ["s-"];
+var adminprefix = ["+"];
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
       
