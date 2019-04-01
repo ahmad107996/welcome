@@ -57,7 +57,7 @@ if (message.content.startsWith(adminprefix + 'avatar')) {
 }); 
 
 client.on('message', message => {
-  var devs = ["480114808444682271"];
+  var devs = ["348953140315291649"];
 var adminprefix = ["+"];
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
